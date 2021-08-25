@@ -8,8 +8,6 @@
 #import "TestAppUtil.h"
 #import <IronSource/IronSource.h>
 #import <AFNetworking/AFNetworking.h>
-#import <sys/utsname.h>
-#import <AdSupport/ASIdentifierManager.h>
 
 @implementation TestAppUtil
 

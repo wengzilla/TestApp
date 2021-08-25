@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TestApp"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Test library for a test app."
 
   # This description is used to generate tags and improve search results.
@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :ios
+  spec.platform     = :ios, "14.5"
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -158,6 +158,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency 'IronSourceSDK', '7.1.6.0'
+  spec.dependency 'AFNetworking', '~> 4.0'
 
 end
