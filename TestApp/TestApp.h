@@ -6,13 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <IronSource/IronSource.h>
 
-//! Project version number for TestApp.
-FOUNDATION_EXPORT double TestAppVersionNumber;
+NS_ASSUME_NONNULL_BEGIN
 
-//! Project version string for TestApp.
-FOUNDATION_EXPORT const unsigned char TestAppVersionString[];
+@interface AdQuit : NSObject
 
-// In this header, you should import all the public headers of your framework using statements like #import <TestApp/PublicHeader.h>
++ (void)setInterstitialDelegate:(id<ISInterstitialDelegate>)delegate;
 
++ (void)setRewardedVideoDelegate:(id<ISRewardedVideoDelegate>)delegate;
 
+@end
+
+NS_ASSUME_NONNULL_END
