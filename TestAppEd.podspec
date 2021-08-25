@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "TestApp"
-  spec.version      = "0.0.3"
+  spec.name         = "TestAppEd"
+  spec.version      = "0.0.4"
   spec.summary      = "Test library for a test app."
 
   # This description is used to generate tags and improve search results.
@@ -156,6 +156,8 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   # spec.requires_arc = true
+
+  spec.static_framework = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency 'IronSourceSDK', '7.1.6.0'
